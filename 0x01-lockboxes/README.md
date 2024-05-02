@@ -1,5 +1,8 @@
 # Project: 0x01. Lockboxes
 
+## Logic case
+Considering empty boxes list is already unlocked, So it returns True.
+
 ## Tasks
 
 | Task | File |
