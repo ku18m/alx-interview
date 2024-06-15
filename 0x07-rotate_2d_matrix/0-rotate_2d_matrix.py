@@ -2,7 +2,8 @@
 """
 This module contains a function to rotate a 2D matrix.
 
-The function `rotate_2d_matrix` takes a 2D matrix as input and rotates it 90 degrees clockwise.
+The function `rotate_2d_matrix` takes a 2D matrix as input
+and rotates it 90 degrees clockwise.
 The input matrix is modified in-place.
 
 Example usage:
@@ -37,11 +38,11 @@ def rotate_2d_matrix(matrix):
         None: No specific exceptions are raised.
 
     """
-    if type(matrix) != list:
+    if not isinstance(matrix, list):
         return
     if len(matrix) <= 0:
         return
-    if not all(map(lambda x: type(x) == list, matrix)):
+    if not all(map(lambda x: isinstance(x, list), matrix)):
         return
     rows = len(matrix)
     cols = len(matrix[0])
